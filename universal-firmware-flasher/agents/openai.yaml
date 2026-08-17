@@ -1,0 +1,4 @@
+interface:
+  display_name: "Universal Firmware Flasher"
+  short_description: "Flash, log, and verify firmware targets"
+  default_prompt: "Use $universal-firmware-flasher to flash the configured firmware, capture serial output, and verify the expected changes."
