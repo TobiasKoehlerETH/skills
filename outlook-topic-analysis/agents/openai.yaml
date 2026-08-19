@@ -1,0 +1,7 @@
+interface:
+  display_name: "Outlook Topic Analysis"
+  short_description: "Research Outlook mail and attachments into reports"
+  default_prompt: "Use $outlook-topic-analysis to search Outlook for a topic, inspect matching attachments, and create a verified Markdown report and comparison charts."
+
+policy:
+  allow_implicit_invocation: true

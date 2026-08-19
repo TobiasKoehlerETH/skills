@@ -1,0 +1,82 @@
+[
+  {
+    "manufacturer": "Manufacturer A",
+    "tooling_cost_usd": 2800,
+    "unit_prices": [
+      {"quantity": 30000, "unit_cost_usd": 0.10},
+      {"quantity": 100000, "unit_cost_usd": 0.08}
+    ]
+  },
+  {
+    "manufacturer": "Manufacturer B",
+    "tooling_cost_usd": 2139.89,
+    "unit_prices": [
+      {"quantity": 100000, "unit_cost_usd": 0.1005},
+      {"quantity": 500000, "unit_cost_usd": 0.0974}
+    ]
+  },
+  {
+    "manufacturer": "Manufacturer C",
+    "tooling_cost_usd": 9702,
+    "unit_prices": [
+      {"quantity": 100000, "unit_cost_usd": 0.0427}
+    ]
+  },
+  {
+    "manufacturer": "Manufacturer D",
+    "variant": "general format",
+    "tooling_cost_usd": 2420,
+    "unit_prices": [
+      {"quantity": 100000, "unit_cost_usd": 0.028},
+      {"quantity": 500000, "unit_cost_usd": 0.027}
+    ]
+  },
+  {
+    "manufacturer": "Manufacturer D",
+    "variant": "packaging variant",
+    "tooling_cost_usd": 2420,
+    "unit_prices": [
+      {"quantity": 100000, "unit_cost_usd": 0.042},
+      {"quantity": 500000, "unit_cost_usd": 0.038}
+    ]
+  },
+  {
+    "manufacturer": "Manufacturer E",
+    "tooling_cost_usd": 2267,
+    "unit_prices": [
+      {"quantity": 100000, "unit_cost_usd": 0.0486},
+      {"quantity": 500000, "unit_cost_usd": 0.0463}
+    ]
+  },
+  {
+    "manufacturer": "Manufacturer F",
+    "tooling_cost_usd": 3200,
+    "unit_prices": [
+      {"quantity": 100000, "unit_cost_usd": 0.093},
+      {"quantity": 500000, "unit_cost_usd": 0.083}
+    ]
+  },
+  {
+    "manufacturer": "Manufacturer G",
+    "unit_prices": [
+      {"quantity": 100000, "unit_cost_usd": 0.40},
+      {"quantity": 500000, "unit_cost_usd": 0.28}
+    ]
+  },
+  {
+    "manufacturer": "Manufacturer H",
+    "tooling_cost_usd": 2100,
+    "unit_prices": [
+      {"quantity": 100000, "unit_cost_usd": 0.065},
+      {"quantity": 500000, "unit_cost_usd": 0.062}
+    ]
+  },
+  {
+    "manufacturer": "Manufacturer I",
+    "tooling_cost_usd": 1850.72,
+    "unit_prices": [
+      {"quantity": 100000, "unit_cost_usd": 0.0555},
+      {"quantity": 500000, "unit_cost_usd": 0.0521}
+    ]
+  }
+]
