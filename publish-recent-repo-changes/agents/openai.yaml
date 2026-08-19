@@ -1,4 +1,4 @@
 interface:
   display_name: "Publish Recent Repo Changes"
-  short_description: "Review and push recent Git changes"
-  default_prompt: "Use $publish-recent-repo-changes to recursively review repositories under the specified folder at the end of the workday and ask before committing or pushing recent changes."
+  short_description: "Review, neutralize, and push Git changes"
+  default_prompt: "Use $publish-recent-repo-changes to recursively review repositories under the specified folder at the end of the workday, verify public/private visibility, check for data that must be neutralized, and ask before committing or pushing recent changes."
