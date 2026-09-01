@@ -44,11 +44,21 @@ Always use square brackets for units in axis labels. Examples: `Weight [g]`, `Ti
 Use scientific notation, standard symbols, and formulas where they make the plot more precise:
 
 - Prefer `Δ`, `μ`, `σ`, `ε`, `R²`, `%FS`, and `y = ax + b` over long descriptive phrases.
-- Prefer subtitles such as `μ = 0.042 %FS, σ = 0.016 %FS` or `Δc = 410.73 m - 832.25, R² = 0.99875`.
+- Display at most two significant digits for every measured or calculated number shown in scientific text, including tick labels, subtitles, annotations, legends, fit statistics, and limits. Prefer Python's general format, for example `f"{value:.2g}"`, or Matplotlib's `"%.2g"` formatter. This controls presentation only; retain full precision in the data and calculations.
+- Prefer subtitles such as `μ = 0.042 %FS, σ = 0.016 %FS` or `Δc = 4.1e2 m - 8.3e2, R² = 1.0`.
 - Prefer legends such as `μ`, `fit`, `stable`, `1 g`, or `20 g`.
 - Avoid conversational wording such as `red line is mean deviation`, `counts over time`, or `displayed weight in grams`.
 - Do not put method explanations in axis labels. Put compact methods in the subtitle or a caption-like summary file.
 - For Greek letters, superscripts, hats, subscripts, and symbols in Matplotlib output, prefer mathtext strings such as `$\\Delta$ Counts [counts]`, `$R^2$`, `$\\hat{c}$`, `$\\mu$`, and `$\\epsilon$`. Visually inspect exports; if a glyph renders as `?`, replace it with mathtext or a plain ASCII fallback before delivery.
+
+For displayed numeric ticks, apply the same cap explicitly when the default formatter would show extra precision:
+
+```python
+from matplotlib.ticker import FormatStrFormatter
+
+ax.xaxis.set_major_formatter(FormatStrFormatter("%.2g"))
+ax.yaxis.set_major_formatter(FormatStrFormatter("%.2g"))
+```
 
 ## Colors
 

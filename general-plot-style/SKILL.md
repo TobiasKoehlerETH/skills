@@ -25,6 +25,7 @@ Read [references/style-guide.md](references/style-guide.md) before writing or re
 - Always put units in square brackets in axis labels, for example `Weight [g]`, `Time [s]`, `Temperature [°C]`, `Repeatability [%FS]`, or `Δ Counts [counts]`. Use no brackets only for dimensionless labels such as `Counts`, `Index`, or `R²`.
 - Use symbols and formulas where they improve precision, such as `Δ`, `μ`, `σ`, `ε`, `y = ax + b`, or `%FS`; avoid conversational labels like "red line is mean deviation".
 - In Matplotlib exports, raw Unicode Greek/math symbols can render as `?` with some Windows fonts. Prefer mathtext for symbols, for example `$\\Delta$ Counts [counts]`, `$R^2$`, `$\\hat{c}$`, `$\\mu$`, and `$\\epsilon$`; visually inspect the exported image and replace any `?` glyphs before delivery.
+- Show no more than two significant digits for numeric values rendered as scientific text: axis ticks, subtitles, annotations, legends, fit statistics, and limits. Use general-format precision such as `f"{value:.2g}"` (or a Matplotlib formatter with `"%.2g"`); do not round the underlying data. Keep exact categorical labels only when they are identifiers rather than measured values.
 - Preserve user-requested analytics such as peak markers, fitted lines, smoothing, or limits, but render them using the shared style.
 - Prefer a small plotting module or a few helper functions over repeating style settings inline.
 - Keep the script or notebook easy to tune: expose thresholds, colors, and line widths near the top of the plotting code.
