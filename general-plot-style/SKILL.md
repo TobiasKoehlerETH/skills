@@ -16,6 +16,9 @@ Use this skill to apply a consistent plotting style, not to prescribe a specific
 
 Read [references/style-guide.md](references/style-guide.md) before writing or revising plotting code.
 
+For grouped repeatability or accuracy charts with uncertainty bars, also read
+[references/error-bar-style.md](references/error-bar-style.md).
+
 ## Working Rules
 
 - Use Matplotlib as the default plotting library.
