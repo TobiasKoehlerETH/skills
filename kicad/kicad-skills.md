@@ -11,6 +11,8 @@ Reusable KiCad workflows for this skill collection:
   assembly requirements.
 - [Manufacturing export](kicad-export/SKILL.md) — produce reproducible CLI
   outputs and reports.
+- [Production packages](kicad-production/SKILL.md) — board-named Gerber ZIPs,
+  JLCPCB BOM/CPL files, and complete cleanup of export helpers.
 
 These skills are adapted and neutralized from
 [American-Embedded/kistack](https://github.com/American-Embedded/kistack). See

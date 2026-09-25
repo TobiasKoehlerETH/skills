@@ -1,0 +1,4 @@
+interface:
+  display_name: "KiCad Production Export"
+  short_description: "Gerbers, board ZIPs, JLCPCB CSVs, and complete cleanup"
+  default_prompt: "Use $kicad-production to export the selected KiCad boards into production folders with Gerber ZIPs and JLCPCB assembly files, then remove all export helpers."

@@ -5,9 +5,13 @@ description: Run a repeatable KiCad CLI validation and manufacturing-export work
 
 # KiCad Manufacturing Export
 
-Build the output package from the KiCad source files with a project-local
-script. Use PowerShell or Python, keep the command order explicit, and write
-all generated files under a separate build or release directory.
+For Gerber/fabrication packages, use `kicad-production` for the required
+`production/<pcb-name>/` layout, board-named ZIP, JLCPCB BOM/CPL files, and
+mandatory cleanup. Its packaging and cleanup rules take precedence here.
+
+Use PowerShell or Python as needed, keeping per-run scripts and intermediate
+files in a temporary directory outside the codebase. Remove all helpers after
+the export, including on failure. Keep only requested final deliverables.
 
 ## Before exporting
 
@@ -49,7 +53,8 @@ source CSV header and the receiving manufacturer's specification.
   handling with the release request.
 - Open or render representative outputs. Check that PDFs and images are not
   clipped and that fabrication layers align.
-- Keep the script, command output, reports, and a short manifest together so
-  the package can be reproduced.
+- Summarize commands and validation in the response. Keep scripts, logs,
+  reports, and manifests only when explicitly requested as deliverables;
+  otherwise remove every helper created by the export.
 - Report exact output paths, tool versions, warnings, overrides, and any
   unverified manufacturer-specific assumptions.
